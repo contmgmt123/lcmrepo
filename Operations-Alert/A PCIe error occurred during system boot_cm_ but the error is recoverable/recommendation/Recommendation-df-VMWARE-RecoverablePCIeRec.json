@@ -1,4 +1,0 @@
-{
-  "id": "Recommendation-df-VMWARE-RecoverablePCIeRec",
-  "description": "The PCIe error is recoverable, but system behavior is dependent on how the error is handed by the OEM vendor's firmware. Contact the vendor for assistance."
-}
