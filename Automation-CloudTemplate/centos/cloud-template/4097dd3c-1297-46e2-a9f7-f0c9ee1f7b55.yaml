@@ -1,0 +1,35 @@
+content: |
+  ---
+  formatVersion: 1
+  inputs: {}
+  resources:
+    Cloud_vSphere_Machine_1:
+      type: "Cloud.vSphere.Machine"
+      metadata:
+        layoutPosition:
+        - 0
+        - 0
+      properties:
+        image: "centos"
+        cpuCount: 1
+        totalMemoryMB: 1024
+contentSourceSyncMessages: [
+  ]
+createdAt: '2023-06-05T10:10:38.303826Z'
+createdBy: configadmin
+description: ''
+id: 4097dd3c-1297-46e2-a9f7-f0c9ee1f7b55
+name: centos
+orgId: ab8363a5-e555-4b39-a7ca-4f2bfdfc048c
+projectId: cbdc872d-3097-4fc5-a331-5b8fa6b41f91
+projectName: interop-project
+requestScopeOrg: false
+selfLink: /blueprint/api/blueprints/4097dd3c-1297-46e2-a9f7-f0c9ee1f7b55
+status: DRAFT
+totalReleasedVersions: 0
+totalVersions: 0
+updatedAt: '2023-06-05T10:10:46.527338Z'
+updatedBy: configadmin
+valid: true
+validationMessages: [
+  ]

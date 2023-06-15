@@ -1,0 +1,25 @@
+{
+  "id": "AlertDefinition-VMWARE-FatalMemoryErrorAlert",
+  "name": "A fatal memory error was detected at system boot time",
+  "description": "An error was detected in the system memory when the system was previously booted. Typically, this error is caused by faulty memory hardware. Card or module and other memory device information should appear in the symptom details.",
+  "adapterKindKey": "VMWARE",
+  "resourceKindKey": "HostSystem",
+  "waitCycles": 1,
+  "cancelCycles": 1,
+  "type": 17,
+  "subType": 18,
+  "states": [  {
+    "severity": "CRITICAL",
+    "base-symptom-set":     {
+      "type": "SYMPTOM_SET",
+      "relation": "SELF",
+      "symptomDefinitionIds": ["SymptomDefinition-VMWARE-FatalMemoryError"],
+      "alertConditions": []
+    },
+    "impact":     {
+      "impactType": "BADGE",
+      "detail": "health"
+    },
+    "recommendationPriorityMap": {"Recommendation-df-VMWARE-ReplaceMemoryRec": 1}
+  }]
+}

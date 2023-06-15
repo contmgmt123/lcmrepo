@@ -1,0 +1,6 @@
+{
+  "contentName": "Billing by CPU Cores",
+  "id": "Billing by CPU Cores",
+  "contentType": "Operations-ResourceKindMetricConfig",
+  "descendents": []
+}

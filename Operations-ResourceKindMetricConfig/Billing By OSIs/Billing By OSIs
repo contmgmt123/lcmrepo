@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdapterKinds>
+    <AdapterKind adapterKindKey="Container">
+        <ResourceKind resourceKindKey="Universe">
+            <Metric attrkey="billing_objects|adapters|object_types|osi_count" label="" unit="" yellow="" orange="" red="" link="" attribute="true"/>
+        </ResourceKind>
+    </AdapterKind>
+</AdapterKinds>

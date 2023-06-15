@@ -1,0 +1,7 @@
+{
+  "contentName": "centos",
+  "uniqueId": "4097dd3c-1297-46e2-a9f7-f0c9ee1f7b55",
+  "contentType": "Automation-CloudTemplate",
+  "keyValues": {"contentEndpointVersion": "8.x"},
+  "descendents": []
+}
