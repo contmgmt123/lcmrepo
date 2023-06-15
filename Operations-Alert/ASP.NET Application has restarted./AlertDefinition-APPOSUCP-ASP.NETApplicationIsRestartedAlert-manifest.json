@@ -1,0 +1,12 @@
+{
+  "contentName": "ASP.NET Application has restarted.",
+  "id": "AlertDefinition-APPOSUCP-ASP.NETApplicationIsRestartedAlert",
+  "contentType": "Operations-Alert",
+  "descendents": [  {
+    "contentName": "ASP.NET Application has restarted",
+    "id": "SymptomDefinition-APPOSUCP-ASP.NETApplicationRestarted",
+    "contentType": "Operations-Symptom",
+    "keyValues": {},
+    "descendents": []
+  }]
+}

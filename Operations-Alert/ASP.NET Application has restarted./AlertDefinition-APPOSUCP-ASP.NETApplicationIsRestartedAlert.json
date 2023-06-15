@@ -1,0 +1,25 @@
+{
+  "id": "AlertDefinition-APPOSUCP-ASP.NETApplicationIsRestartedAlert",
+  "name": "ASP.NET Application has restarted.",
+  "description": "ASP.NET Application has restarted.",
+  "adapterKindKey": "APPOSUCP",
+  "resourceKindKey": "msexchange",
+  "waitCycles": 1,
+  "cancelCycles": 1,
+  "type": 15,
+  "subType": 19,
+  "states": [  {
+    "severity": "AUTO",
+    "base-symptom-set":     {
+      "type": "SYMPTOM_SET",
+      "relation": "SELF",
+      "symptomSetOperator": "AND",
+      "symptomDefinitionIds": ["SymptomDefinition-APPOSUCP-ASP.NETApplicationRestarted"],
+      "alertConditions": []
+    },
+    "impact":     {
+      "impactType": "BADGE",
+      "detail": "health"
+    }
+  }]
+}

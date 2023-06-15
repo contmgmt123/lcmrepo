@@ -1,0 +1,12 @@
+{
+  "contentName": "A fatal memory error was detected at system boot time",
+  "id": "AlertDefinition-VMWARE-FatalMemoryErrorAlert",
+  "contentType": "Operations-Alert",
+  "descendents": [  {
+    "contentName": "A fatal memory error occurred",
+    "id": "SymptomDefinition-VMWARE-FatalMemoryError",
+    "contentType": "Operations-Symptom",
+    "keyValues": {},
+    "descendents": []
+  }]
+}

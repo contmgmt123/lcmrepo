@@ -1,0 +1,24 @@
+createdAt: '2023-06-05T08:35:18.927339Z'
+createdBy: system-user
+description: Property Group with VMware Aria Automation Config server details such
+  as primary node address and fingerprint.
+displayName: VMware Aria Automation Config Server Properties
+id: 94b04299-5429-4abf-bc06-c1cc80f9a2b4
+name: SaltStackConfiguration
+orgId: ab8363a5-e555-4b39-a7ca-4f2bfdfc048c
+organizationName: lcm-196-86-1
+properties:
+  masterAddress:
+    const: lcm-196-86-6.sqa.local
+    description: Salt Master address associated with VMware Aria Automation Config
+      Server.
+    encrypted: false
+    type: string
+  masterFingerPrint:
+    const: 79:6a:a9:c2:89:9e:da:72:d1:85:ef:ec:e9:0d:d0:c1:ae:c0:b1:22:76:98:53:1b:a0:45:c4:b2:0a:e1:d1:69
+    description: Salt Master finger print
+    encrypted: false
+    type: string
+type: CONSTANT
+updatedAt: '2023-06-05T08:35:18.927339Z'
+updatedBy: system-user
