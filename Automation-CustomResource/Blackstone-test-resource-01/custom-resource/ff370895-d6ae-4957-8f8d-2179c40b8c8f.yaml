@@ -1,0 +1,86 @@
+id: ff370895-d6ae-4957-8f8d-2179c40b8c8f
+displayName: Blackstone-test-resource-01
+description: ''
+resourceType: Custom.blackstone.test.resource
+externalType: VC:Datacenter
+status: RELEASED
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+projectId: d0b5772c-de2b-4ed8-9a56-c9908362328c
+mainActions:
+  create:
+    id: BD808080808080808080808080808080BDC280800122528313869552e41805bb1
+    name: Create datacenter
+    description: Creates a new datacenter in a datacenter folder.
+    type: vro.workflow
+    inputParameters:
+    - type: VC:DatacenterFolder
+      name: folder
+      description: Parent datacenter folder
+    - type: string
+      name: name
+      description: Name of new datacenter
+    outputParameters:
+    - type: VC:Datacenter
+      name: newDatacenter
+      description: The newly created datacenter
+    endpointLink: /resources/endpoints/66898d5e-1b06-4567-b120-f50bba97e534
+  delete:
+    id: BD808080808080808080808080808080A3C380800122528313869552e41805bb1
+    name: Rename datacenter
+    description: Renames a datacenter and waits for the task to complete.
+    type: vro.workflow
+    inputParameters:
+    - type: VC:Datacenter
+      name: datacenter
+      description: Datacenter to rename
+    - type: string
+      name: newName
+      description: New datacenter name
+    endpointLink: /resources/endpoints/66898d5e-1b06-4567-b120-f50bba97e534
+additionalActions: [
+  ]
+properties:
+  type: object
+  properties:
+    name:
+      type: string
+      title: Name of new datacenter
+    folder:
+      type: object
+      title: Parent folder
+      properties:
+        id:
+          type: string
+          title: Reference object identifier
+        type:
+          type: string
+          title: Reference object type
+      $data: vro/data/inventory/VC:DatacenterFolder
+    newDatacenter:
+      type: object
+      properties:
+        id:
+          type: string
+          title: id
+        name:
+          type: string
+          title: name
+        type:
+          type: string
+          title: type
+        sdkId:
+          type: string
+          title: sdkId
+        vimId:
+          type: string
+          title: vimId
+        vimType:
+          type: string
+          title: vimType
+      computed: true
+  required:
+  - folder
+  - name
+schemaType: VRO_INVENTORY
+projectName: Blackstone-XaaS-Project
+organizationName: lcm-57-15

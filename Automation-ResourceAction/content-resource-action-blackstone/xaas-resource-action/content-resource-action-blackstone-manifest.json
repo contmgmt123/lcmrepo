@@ -1,0 +1,7 @@
+{
+  "contentName": "content-resource-action-blackstone",
+  "uniqueId": "Deployment.custom.content-resource-action-blackstone",
+  "contentType": "Automation-ResourceAction",
+  "keyValues": {"contentEndpointVersion": "8.x"},
+  "descendents": []
+}

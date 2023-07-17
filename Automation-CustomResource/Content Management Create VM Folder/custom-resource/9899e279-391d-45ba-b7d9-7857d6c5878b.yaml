@@ -1,0 +1,103 @@
+id: 9899e279-391d-45ba-b7d9-7857d6c5878b
+displayName: Content Management Create VM Folder
+description: This is a content management validation content
+resourceType: Custom.CreateFolder
+externalType: VC:VmFolder
+status: RELEASED
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+mainActions:
+  create:
+    id: BD8080808080808080808080808080808EC380800122528313869552e41805bb1
+    name: Create virtual machine folder
+    description: Creates a new virtual machine folder.
+    type: vro.workflow
+    inputParameters:
+    - type: VC:VmFolder
+      name: parentFolder
+      description: Parent folder
+    - type: string
+      name: name
+      description: Name of the new folder
+    outputParameters:
+    - type: VC:VmFolder
+      name: newFolder
+      description: The newly created folder, if no errors occur
+    endpointLink: /resources/endpoints/66898d5e-1b06-4567-b120-f50bba97e534
+  delete:
+    id: BD80808080808080808080808080808062C180800122528313869552e41805bb1
+    name: Delete virtual machine folder
+    description: Deletes a virtual machine folder and waits for the task to complete.
+    type: vro.workflow
+    inputParameters:
+    - type: VC:VmFolder
+      name: folder
+      description: Folder to delete
+    endpointLink: /resources/endpoints/66898d5e-1b06-4567-b120-f50bba97e534
+additionalActions:
+- id: Custom.CreateFolder.custom.renamevmfolder
+  name: RenameVMFolder
+  displayName: Rename virtual machine folder
+  providerName: vro-workflow
+  resourceType: Custom.CreateFolder
+  status: RELEASED
+  orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+  runnableItem:
+    id: BD80808080808080808080808080808016C180800122528313869552e41805bb1
+    name: Rename virtual machine folder
+    description: Renames a virtual machine folder and waits for the task to complete.
+    type: vro.workflow
+    inputParameters:
+    - type: VC:VmFolder
+      name: folder
+      description: Folder to rename
+    - type: string
+      name: newName
+      description: New folder name
+    endpointLink: /resources/endpoints/66898d5e-1b06-4567-b120-f50bba97e534
+  formDefinition:
+    id: 69816691-f2b4-4a90-97aa-38f498fa1579
+    name: RenameVMFolder
+    form: '{"layout":{"pages":[{"id":"page_1","title":"General","sections":[{"id":"section_0","fields":[{"id":"folder","display":"valuePickerTree","state":{"read-only":true}}]},{"id":"section_1","fields":[{"id":"newName","display":"textField"}]}]}]},"schema":{"folder":{"label":"Folder
+      to rename","type":{"dataType":"reference","referenceType":"VC:VmFolder","isMultiple":false},"constraints":{"required":false}},"newName":{"label":"New
+      folder name","type":{"dataType":"string","isMultiple":false},"constraints":{"required":true}}}}'
+    sourceType: resource.action
+    sourceId: Custom.CreateFolder.custom.renamevmfolder
+    type: requestForm
+    tenant: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+    status: 'ON'
+    formFormat: JSON
+properties:
+  type: object
+  properties:
+    name:
+      type: string
+      title: Name of the new folder
+    newFolder:
+      type: object
+      properties:
+        id:
+          type: string
+          title: id
+        name:
+          type: string
+          title: name
+        sdkId:
+          type: string
+          title: sdkId
+      computed: true
+    parentFolder:
+      type: object
+      title: Parent folder
+      properties:
+        id:
+          type: string
+          title: Reference object identifier
+        type:
+          type: string
+          title: Reference object type
+      $data: vro/data/inventory/VC:VmFolder
+  required:
+  - parentFolder
+  - name
+schemaType: VRO_INVENTORY
+organizationName: lcm-57-15

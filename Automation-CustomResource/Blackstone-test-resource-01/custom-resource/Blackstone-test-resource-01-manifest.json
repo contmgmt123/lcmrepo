@@ -1,0 +1,7 @@
+{
+  "contentName": "Blackstone-test-resource-01",
+  "uniqueId": "ff370895-d6ae-4957-8f8d-2179c40b8c8f",
+  "contentType": "Automation-CustomResource",
+  "keyValues": {"contentEndpointVersion": "8.x"},
+  "descendents": []
+}
