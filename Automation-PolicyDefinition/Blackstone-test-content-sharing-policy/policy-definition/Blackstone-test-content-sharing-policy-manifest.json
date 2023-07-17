@@ -1,0 +1,7 @@
+{
+  "contentName": "Blackstone-test-content-sharing-policy",
+  "uniqueId": "c9f3b070-a39f-427d-abae-0c10b3776e13",
+  "contentType": "Automation-PolicyDefinition",
+  "keyValues": {"contentEndpointVersion": "8.x"},
+  "descendents": []
+}

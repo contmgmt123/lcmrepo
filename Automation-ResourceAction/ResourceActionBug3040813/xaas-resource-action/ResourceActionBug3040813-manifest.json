@@ -1,0 +1,7 @@
+{
+  "contentName": "ResourceActionBug3040813",
+  "uniqueId": "vro.workflow.custom.resourceactionbug3040813",
+  "contentType": "Automation-ResourceAction",
+  "keyValues": {"contentEndpointVersion": "8.x"},
+  "descendents": []
+}

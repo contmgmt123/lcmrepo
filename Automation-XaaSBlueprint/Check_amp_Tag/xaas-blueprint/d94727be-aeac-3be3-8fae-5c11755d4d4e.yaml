@@ -1,0 +1,24 @@
+id: d94727be-aeac-3be3-8fae-5c11755d4d4e
+name: Check&Tag
+type:
+  id: com.vmw.vro.workflow
+  link: /catalog/api/types/com.vmw.vro.workflow
+  name: vRealize Orchestrator Workflow
+createdAt: '2023-04-14T09:25:57.883985Z'
+createdBy: configadmin
+lastUpdatedAt: '2023-07-17T05:08:13.972644Z'
+lastUpdatedBy: system-user
+schema:
+  type: object
+  properties:
+    Tag:
+      type: string
+      title: Tag
+  required: [
+    ]
+bulkRequestLimit: 1
+formId: 10714d7d-abc9-4b0a-a109-51895f79ab54
+externalId: 85d16c6a-61d3-4c76-bbcd-965e5739628c
+sourceId: 014f3eb9-422d-4ad9-a48a-d519cc861199
+sourceName: Test-Xaas-Content-Blackstone
+workflowId: 85d16c6a-61d3-4c76-bbcd-965e5739628c

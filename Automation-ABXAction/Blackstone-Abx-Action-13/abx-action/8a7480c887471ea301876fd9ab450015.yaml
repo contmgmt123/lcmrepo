@@ -1,0 +1,50 @@
+name: Blackstone-Abx-Action-13
+createdMillis: 1681208748871
+updatedMillis: 1681208748871
+metadata:
+  actionIsRetriable: false
+runtime: nodejs
+source: |
+  /** Sets a name for a machine
+   * @param {Object} inputs
+   * @param {string[]} inputs.resourceNames - Contains the original name of the machine.
+   *                   It is supplied from the event data during actual
+   *                   provisioning or from user input for testing purposes.
+   * @param {string} inputs.newName - The new machine name to be set.
+   * @returns {Object} The desired machine name.
+   */
+  exports.handler = function handler(context, inputs) {
+      let oldName = inputs.resourceNames[0];
+      let newName = inputs.newName;
+
+      let outputs = {};
+      outputs.resourceNames = inputs.resourceNames;
+      outputs.resourceNames[0] = newName;
+
+      console.log("Setting machine name from " + oldName + " to " + newName);
+
+      return outputs;
+  };
+entrypoint: handler
+inputs:
+  newName: new-machine-name
+  resourceNames:
+  - machine-name
+cpuShares: 1024
+memoryInMB: 300
+showMemoryAlert: false
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: SCRIPT
+provider: ''
+configuration:
+  const_azure-system_managed_identity: false
+system: false
+shared: false
+asyncDeployed: false
+id: 8a7480c887471ea301876fd9ab450015
+projectId: f630194e-9b32-47ec-89de-cf5337be5792
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+selfLink: /abx/api/resources/actions/8a7480c887471ea301876fd9ab450015?projectId=f630194e-9b32-47ec-89de-cf5337be5792
+projectName: Content Management Custom Resource Project.
+organizationName: lcm-57-15
