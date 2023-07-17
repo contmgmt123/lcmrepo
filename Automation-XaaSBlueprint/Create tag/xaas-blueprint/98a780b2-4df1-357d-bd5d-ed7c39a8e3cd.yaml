@@ -1,0 +1,42 @@
+id: 98a780b2-4df1-357d-bd5d-ed7c39a8e3cd
+name: Create tag
+type:
+  id: com.vmw.vro.workflow
+  link: /catalog/api/types/com.vmw.vro.workflow
+  name: vRealize Orchestrator Workflow
+createdAt: '2023-04-11T13:15:10.066727Z'
+createdBy: configadmin
+lastUpdatedAt: '2023-07-17T05:08:14.354151Z'
+lastUpdatedBy: system-user
+schema:
+  type: object
+  properties:
+    name:
+      type: string
+      title: name
+    endpoint:
+      type: object
+      title: vAPI Endpoint
+      properties:
+        id:
+          type: string
+          title: Reference object identifier
+        type:
+          type: string
+          title: Reference object type
+      $data: vro/data/inventory/VAPI:VAPIEndpoint
+    categoryId:
+      type: string
+      title: Tag category ID
+    description:
+      type: string
+      title: description
+  required:
+  - endpoint
+  - categoryId
+bulkRequestLimit: 1
+formId: 8d73026b-98ed-4d6d-a872-7b8f8a857be7
+externalId: c5294689-7e1a-4489-a585-2fd36ef20c6d
+sourceId: 014f3eb9-422d-4ad9-a48a-d519cc861199
+sourceName: Test-Xaas-Content-Blackstone
+workflowId: c5294689-7e1a-4489-a585-2fd36ef20c6d

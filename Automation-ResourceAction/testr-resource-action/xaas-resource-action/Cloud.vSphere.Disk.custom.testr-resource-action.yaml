@@ -1,0 +1,55 @@
+id: Cloud.vSphere.Disk.custom.testr-resource-action
+name: testr-resource-action
+displayName: testr-resource-action
+description: testr-resource-action
+providerName: vro-workflow
+resourceType: Cloud.vSphere.Disk
+status: RELEASED
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+runnableItem:
+  id: BD8080808080808080808080808080801BC280800122528313869552e41805bb1
+  name: Add disk
+  description: Adds a virtual disk to a virtual machine.
+  type: vro.workflow
+  inputParameters:
+  - type: VC:VirtualMachine
+    name: vm
+    description: Virtual machine to which to add the disk
+  - type: VC:Datastore
+    name: datastore
+    description: Datastore in which to put the virtual disk file
+  - type: number
+    name: diskIndex
+    description: Disk index
+  - type: number
+    name: diskSize
+    description: Disk size (in GB)
+  - type: VC:VirtualDiskMode
+    name: diskMode
+    description: Disk persistence mode
+  - type: number
+    name: scsiBusNumber
+    description: SCSI controller bus number
+  - type: boolean
+    name: thinProvisioned
+    description: Use thin provisioning?
+  endpointLink: /resources/endpoints/66898d5e-1b06-4567-b120-f50bba97e534
+formDefinition:
+  id: 41839014-8abe-467e-b4f3-ef203d16de1b
+  name: testr-resource-action
+  form: '{"layout":{"pages":[{"id":"page_1","title":"VM","sections":[{"id":"section_0","fields":[{"id":"vm","display":"valuePicker"}]}]},{"id":"page_2","title":"Disk
+    information","sections":[{"id":"section_2","fields":[{"id":"datastore","display":"valuePicker"}]},{"id":"section_3","fields":[{"id":"diskMode","display":"valuePicker"}]},{"id":"section_4","fields":[{"id":"diskIndex","display":"decimalField"}]},{"id":"section_5","fields":[{"id":"diskSize","display":"decimalField"}]},{"id":"section_6","fields":[{"id":"scsiBusNumber","display":"decimalField"}]},{"id":"section_7","fields":[{"id":"thinProvisioned","display":"checkbox"}]}]}]},"schema":{"vm":{"label":"Virtual
+    machine to which to add the disk","type":{"dataType":"reference","referenceType":"VC:VirtualMachine","isMultiple":false},"constraints":{"required":true}},"diskMode":{"label":"Disk
+    persistence mode","type":{"dataType":"reference","referenceType":"VC:VirtualDiskMode","isMultiple":false},"constraints":{"required":true}},"diskSize":{"label":"Disk
+    size (in GB)","type":{"dataType":"decimal","isMultiple":false},"constraints":{"required":true,"min-value":0.01}},"datastore":{"label":"Datastore
+    in which to put the virtual disk file","type":{"dataType":"reference","referenceType":"VC:Datastore","isMultiple":false},"constraints":{"required":true}},"diskIndex":{"label":"Disk
+    index","type":{"dataType":"decimal","isMultiple":false},"constraints":{"required":true,"max-value":15.0,"min-value":0.0}},"scsiBusNumber":{"label":"SCSI
+    controller bus number","type":{"dataType":"decimal","isMultiple":false},"constraints":{"min-value":0.0}},"thinProvisioned":{"label":"Use
+    thin provisioning?","type":{"dataType":"boolean","isMultiple":false},"default":false,"constraints":{}}},"options":{"externalValidations":[]}}'
+  sourceType: resource.action
+  sourceId: Cloud.vSphere.Disk.custom.testr-resource-action
+  type: requestForm
+  tenant: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+  status: 'ON'
+  formFormat: JSON
+organizationName: lcm-57-15

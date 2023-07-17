@@ -1,0 +1,21 @@
+id: c9f3b070-a39f-427d-abae-0c10b3776e13
+name: Blackstone-test-content-sharing-policy
+typeId: com.vmware.policy.catalog.entitlement
+enforcementType: HARD
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+projectId: d0b5772c-de2b-4ed8-9a56-c9908362328c
+definition:
+  entitledUsers:
+  - items:
+    - id: 8e732bdf-6a01-4724-a7e1-3e574dd89379
+      type: CATALOG_SOURCE_IDENTIFIER
+    userType: USER
+    principals:
+    - type: PROJECT
+      referenceId: ''
+createdAt: '2023-06-20T15:19:53.662397Z'
+createdBy: configadmin
+lastUpdatedAt: '2023-06-20T15:19:53.662397Z'
+lastUpdatedBy: configadmin
+projectName: Blackstone-XaaS-Project
+organizationName: lcm-57-15

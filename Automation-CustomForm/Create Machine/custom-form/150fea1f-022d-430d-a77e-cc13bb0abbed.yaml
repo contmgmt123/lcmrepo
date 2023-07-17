@@ -1,0 +1,72 @@
+id: 150fea1f-022d-430d-a77e-cc13bb0abbed
+name: Create Machine
+form: '{"layout":{"pages":[{"id":"page_iqydlsdj","title":"General","sections":[{"id":"section_project","fields":[{"id":"project","display":"dropDown","signpostPosition":"right-middle"}]},{"id":"section_deploymentName","fields":[{"id":"deploymentName","display":"textField","signpostPosition":"right-middle"}]},{"id":"section_enez0u0y","fields":[{"id":"host","display":"valuePickerTree","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_f2660c01","fields":[{"id":"name","display":"textField","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_y2p3z1i8","fields":[{"id":"description","display":"textField","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_5742a0f6","fields":[{"id":"machineCount","display":"decimalField","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_557ea113","fields":[{"id":"projectInput","display":"valuePickerTree","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]}],"state":{}},{"id":"page_46d89d94","title":"Flavors
+  and Images","sections":[{"id":"section_4cd93651","fields":[{"id":"image","display":"dropDown","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_29a44f2b","fields":[{"id":"imageRef","display":"dropDown","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_aa5109cb","fields":[{"id":"flavor","display":"dropDown","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_a142d13b","fields":[{"id":"flavorRef","display":"dropDown","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]}],"state":{}},{"id":"page_915dd66f","title":"Machine
+  Tags & Constraints","sections":[{"id":"section_uzlanj0m","fields":[{"id":"tags","display":"array","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_qasr2khp","fields":[{"id":"constraints","display":"array","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]}],"state":{}},{"id":"page_4ffbecc8","title":"Custom
+  Properties","sections":[{"id":"section_hk1xrdc7","fields":[{"id":"customProperties","display":"datagrid","state":{"visible":true,"read-only":false,"hidden-fields":[]},"signpostPosition":"bottom-left"}]}],"state":{}},{"id":"page_117fe0fe","title":"Machine
+  Boot Config","sections":[{"id":"section_00d85246","fields":[{"id":"machineBootConfig","display":"textArea","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_pmzbvqsl","fields":[{"id":"phoneHomeShouldWait","display":"checkbox","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_53nybni7","fields":[{"id":"phoneHomeFailOnTimeout","display":"checkbox","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_3nj545p1","fields":[{"id":"phoneHomeTimeoutSeconds","display":"decimalField","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]}],"state":{}},{"id":"page_713b94cf","title":"Remote
+  Access","sections":[{"id":"section_119ebe63","fields":[{"id":"authentication","display":"dropDown","state":{"visible":true,"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_ia4ht14e","fields":[{"id":"userName","display":"textField","state":{"visible":[{"value":true,"equals":{"authentication":"generatedPublicPrivateKey"}},{"value":true,"equals":{"authentication":"publicPrivateKey"}},{"value":true,"equals":{"authentication":"usernamePassword"}}],"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_7b4lydpp","fields":[{"id":"password","display":"passwordField","state":{"visible":[{"value":true,"equals":{"authentication":"usernamePassword"}}],"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_ekdppszw","fields":[{"id":"sshKey","display":"textArea","state":{"visible":[{"value":true,"equals":{"authentication":"publicPrivateKey"}}],"read-only":false},"signpostPosition":"right-middle"}]},{"id":"section_1zznho18","fields":[{"id":"keyPair","display":"textField","state":{"visible":[{"value":true,"equals":{"authentication":"keyPairName"}}],"read-only":false},"signpostPosition":"right-middle"}]}],"state":{}},{"id":"page_8b05e6b3","title":"Disks","sections":[{"id":"section_0b31f0f6","fields":[{"id":"disks","display":"datagrid","state":{"visible":true,"read-only":false,"hidden-fields":[]},"signpostPosition":"bottom-left"}]}],"state":{}},{"id":"page_91aa84b0","title":"Network
+  Interfaces","sections":[{"id":"section_65080n82","fields":[{"id":"nics","display":"datagrid","state":{"visible":true,"read-only":false,"hidden-fields":[]},"signpostPosition":"bottom-left"}]}],"state":{}}]},"schema":{"host":{"label":"Vra
+  Host","type":{"dataType":"reference","referenceType":"VRA:Host"},"constraints":{"required":true}},"name":{"label":"Machine
+  Name","type":{"dataType":"string"},"constraints":{"required":true}},"nics":{"label":"Network
+  Interfaces","signpost":"A set of network interface controller specifications for
+  this machine. If not specified, then a default network connection will be created.\nAs
+  per the network specification, either networkId or fabricNetworkId can be specified,
+  not both.","type":{"dataType":"complex","fields":[{"label":"Name","type":{"dataType":"string"},"constraints":{},"id":"name"},{"label":"Description","type":{"dataType":"string"},"constraints":{},"id":"description"},{"label":"Fabric
+  Network","type":{"dataType":"reference","referenceType":"VRA:FabricNetwork"},"constraints":{"required":false},"id":"fabricNetwork"},{"label":"Network
+  Id","type":{"dataType":"string"},"constraints":{},"id":"networkId"},{"label":"Device
+  Index","type":{"dataType":"string"},"constraints":{},"id":"deviceIndex"},{"label":"Addresses","type":{"dataType":"string","isMultiple":true},"constraints":{},"id":"addresses"},{"label":"Mac
+  Address","type":{"dataType":"string"},"constraints":{},"id":"macAddress"},{"label":"Security
+  Group Ids","type":{"dataType":"string","isMultiple":true},"constraints":{},"id":"securityGroupIds"},{"label":"Custom
+  Properties","type":{"dataType":"complex","fields":[{"label":"key","type":{"dataType":"string"},"id":"key"},{"label":"value","type":{"dataType":"string"},"id":"value"}],"isMultiple":true},"id":"customProperties"}],"isMultiple":true}},"tags":{"label":"Tags","signpost":"A
+  set of tag keys and optional values that should be set on this resource.","type":{"dataType":"string","isMultiple":true},"constraints":{"required":false}},"disks":{"label":"Disks","signpost":"A
+  set of disk specifications for this machine.","type":{"dataType":"complex","fields":[{"label":"Name","type":{"dataType":"string"},"constraints":{},"id":"name"},{"label":"Description","type":{"dataType":"string"},"constraints":{},"id":"description"},{"label":"Unit
+  Number","type":{"dataType":"string"},"constraints":{},"id":"unitNumber"},{"label":"Block
+  Device","type":{"dataType":"reference","referenceType":"VRA:BlockDevice"},"constraints":{"required":true},"id":"blockDevice"},{"label":"SCSI
+  Controller","type":{"dataType":"string"},"constraints":{},"id":"scsiController"},{"label":"Disk
+  Attachment Properties","type":{"dataType":"complex","fields":[{"label":"key","type":{"dataType":"string"},"id":"key"},{"label":"value","type":{"dataType":"string"},"id":"value"}],"isMultiple":true},"id":"diskAttachmentProperties"}],"isMultiple":true}},"image":{"label":"Image","signpost":"Type
+  of image used for this machine.","type":{"dataType":"string"},"valueList":{"id":"com.vmware.library.vra.infrastructure.image/getAllImageMapping","type":"scriptAction","parameters":[{"$type":{"dataType":"reference","referenceType":"VRA:Host"},"host":"host"}]},"constraints":{"required":true}},"flavor":{"label":"Flavor","signpost":"Flavor
+  of machine instance.","type":{"dataType":"string"},"valueList":{"id":"com.vmware.library.vra.infrastructure.flavor/getAllFlavorMapping","type":"scriptAction","parameters":[{"$type":{"dataType":"reference","referenceType":"VRA:Host"},"host":"host"}]},"constraints":{"required":true}},"sshKey":{"label":"SSH
+  Key","signpost":"example: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCu74dLkAGGYIgNuszEAM0HaS2Y6boTPw+HqsFmtPSOpxPQoosws/OWGZlW1uue6Y4lIvdRqZOaLK+2di5512etY67ZwFHc5h1kx4az433DsnoZhIzXEKKI+EXfH/w72CIyG/uVhIzmA4FvRVQKXinE1vaVen6v1CBQEZibx9RXrVRP1VRibsKFRXYxywNEl1VtPK7KaxCEYO9IXi4SKVulSAhOVequwjlo5E8bKNT61/g/YyMvwCbaTTPPeCpS/7i+JHYY3QZ8fQY/Syn+bOFpKCCHl+7VpsL8gjWe6fI4bUp6KUiW7ZkQpL/47rxawKnRMKKEU9P0ICp3RRB39lXT\n\nIn
+  key pair authentication, the public key on the provisioned machine. Users are expected
+  to log in with their private key and a default username from the cloud provider.
+  An AWS Ubuntu image comes with default user ubuntu, and Azure comes with default
+  user azureuser. To log in by SSH:\nssh -i <private-key-path> ubuntu@52.90.80.153\nssh
+  -i <private-key-path> azureuser@40.76.14.255","type":{"dataType":"string"},"constraints":{"required":false}},"keyPair":{"label":"Key
+  Pair","signpost":"Key Pair Name.","type":{"dataType":"string"},"constraints":{"required":false}},"project":{"label":"Project","type":{"dataType":"string","isMultiple":false},"valueList":{"id":"projects","type":"scriptAction"},"constraints":{"required":true}},"imageRef":{"label":"Image
+  Reference","signpost":"Direct image reference used for this machine (name, path,
+  location, uri, etc.). Valid if no image property is provided.","type":{"dataType":"string"},"valueList":{"id":"com.vmware.library.vra.infrastructure.image/getAllImageReferecesByImageName","type":"scriptAction","parameters":[{"$type":{"dataType":"reference","referenceType":"VRA:Host"},"host":"host"},{"$type":{"dataType":"string"},"image":"image"}]},"constraints":{"required":false}},"password":{"label":"Password","signpost":"Remote
+  access password for the Azure machine.","type":{"dataType":"secureString"},"constraints":{"required":false}},"userName":{"label":"User
+  Name","signpost":"Remote access username for the Azure machine.","type":{"dataType":"string"},"constraints":{"required":false}},"flavorRef":{"label":"Flavor
+  Reference","signpost":"Provider specific flavor reference. Valid if no flavor property
+  is provided.","type":{"dataType":"string"},"valueList":{"id":"com.vmware.library.vra.infrastructure.flavor/getAllFlavorReferecesByFlavorName","type":"scriptAction","parameters":[{"$type":{"dataType":"reference","referenceType":"VRA:Host"},"host":"host"},{"$type":{"dataType":"string"},"flavor":"flavor"}]},"constraints":{"required":false}},"constraints":{"label":"Constraints","signpost":"Constraints
+  that are used to drive placement policies for the virtual machine that is produced
+  from this specification. Constraint expressions are matched against tags on existing
+  placement targets.","type":{"dataType":"string","isMultiple":true},"constraints":{"required":false}},"description":{"label":"Machine
+  Description","type":{"dataType":"string"},"constraints":{"required":false}},"machineCount":{"label":"Machine
+  Count","signpost":"Number of machines to provision - default 1.","type":{"dataType":"decimal"},"default":1,"constraints":{"required":true,"min-value":1}},"projectInput":{"label":"Project
+  Input","type":{"dataType":"reference","referenceType":"VRA:Project"},"constraints":{"required":true}},"authentication":{"label":"Authentication","signpost":"One
+  of four authentication types.\ngeneratedPublicPrivateKey: The provisioned machine
+  generates the public/private key pair and enables SSH to use them without user input.\npublicPrivateKey:
+  The user enters the private key in the SSH command. See remoteAccess.sshKey.\nusernamePassword:
+  The user enters a username and password for remote access.\nkeyPairName: The user
+  enters an already existing keyPair name. See remoteAccess.keyPair","type":{"dataType":"string"},"valueList":["generatedPublicPrivateKey","publicPrivateKey","usernamePassword","keyPairName"],"constraints":{"required":false}},"deploymentName":{"label":"Deployment
+  Name","type":{"dataType":"string","isMultiple":false},"constraints":{"required":true,"max-value":900}},"customProperties":{"label":"Custom
+  Properties","signpost":"Additional custom properties that may be used to extend
+  this resource.","type":{"dataType":"complex","fields":[{"label":"Key","type":{"dataType":"string"},"constraints":{},"id":"key"},{"label":"Value","type":{"dataType":"string"},"constraints":{},"id":"value"}],"isMultiple":true}},"machineBootConfig":{"label":"Machine
+  Boot Config","signpost":"Machine boot config that will be passed to the instance
+  that can be used to perform common automated configuration tasks and even run scripts
+  after the instance starts.","type":{"dataType":"string"},"constraints":{}},"phoneHomeShouldWait":{"label":"PhoneHome
+  Should Wait","signpost":"A phone_home module will be added to the Cloud Config and
+  the provisioning will wait on a callback prior proceeding.","type":{"dataType":"boolean"},"constraints":{"required":false}},"phoneHomeFailOnTimeout":{"label":"PhoneHome
+  FailOn Timeout","signpost":"In case a timeout occurs whether the provisioning process
+  should fail or continue.\n\n","type":{"dataType":"boolean"},"constraints":{"required":false}},"phoneHomeTimeoutSeconds":{"label":"PhoneHomeTimeout  (In
+  Seconds)","signpost":"The period of time to wait for the phone_home module callback
+  to occur.","type":{"dataType":"decimal"},"constraints":{"required":false}}},"options":{"externalValidations":[]}}'
+sourceType: com.vmw.vro.workflow
+sourceId: 30cc5352-b591-3cc8-82a5-63624ddee84f
+type: requestForm
+tenant: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+status: 'ON'
+formFormat: JSON
+sourceName: Create Machine

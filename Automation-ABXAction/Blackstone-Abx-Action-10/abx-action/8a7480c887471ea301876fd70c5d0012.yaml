@@ -1,0 +1,38 @@
+name: Blackstone-Abx-Action-10
+createdMillis: 1681208577121
+updatedMillis: 1681208577121
+metadata:
+  actionIsRetriable: false
+runtime: nodejs
+source: |
+  exports.handler = function handler(context, inputs) {
+    let greeting = "Hello, " +  inputs.target + "!" ;
+    console.log(greeting);
+
+    let outputs = {
+      "greeting": greeting
+    };
+
+    return outputs;
+  };
+entrypoint: handler
+inputs:
+  target: World
+cpuShares: 1024
+memoryInMB: 300
+showMemoryAlert: false
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: SCRIPT
+provider: ''
+configuration:
+  const_azure-system_managed_identity: false
+system: false
+shared: true
+asyncDeployed: false
+id: 8a7480c887471ea301876fd70c5d0012
+projectId: f630194e-9b32-47ec-89de-cf5337be5792
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+selfLink: /abx/api/resources/actions/8a7480c887471ea301876fd70c5d0012?projectId=f630194e-9b32-47ec-89de-cf5337be5792
+projectName: Content Management Custom Resource Project.
+organizationName: lcm-57-15

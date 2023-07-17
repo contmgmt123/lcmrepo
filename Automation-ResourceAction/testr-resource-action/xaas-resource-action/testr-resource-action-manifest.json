@@ -1,0 +1,7 @@
+{
+  "contentName": "testr-resource-action",
+  "uniqueId": "Cloud.vSphere.Disk.custom.testr-resource-action",
+  "contentType": "Automation-ResourceAction",
+  "keyValues": {"contentEndpointVersion": "8.x"},
+  "descendents": []
+}
