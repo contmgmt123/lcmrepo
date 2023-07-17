@@ -1,0 +1,7 @@
+{
+  "contentName": "Content Management Create VM Folder",
+  "uniqueId": "9899e279-391d-45ba-b7d9-7857d6c5878b",
+  "contentType": "Automation-CustomResource",
+  "keyValues": {"contentEndpointVersion": "8.x"},
+  "descendents": []
+}

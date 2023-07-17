@@ -1,0 +1,68 @@
+id: Deployment.custom.content-resource-action-blackstone
+name: content-resource-action-blackstone
+displayName: content-resource-action-blackstone
+providerName: vro-workflow
+resourceType: Deployment
+status: RELEASED
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+runnableItem:
+  id: 8C838080808080808080808080808080898080800126658240472157fdafc0fce
+  name: Create a deploy rule
+  description: Creates a new deploy rule.
+  type: vro.workflow
+  inputParameters:
+  - type: AutoDeploy:AutoDeploy
+    name: adHost
+    description: Auto Deploy host used for creating a new rule.
+  - type: string
+    name: ruleName
+    description: Name of the new deploy rule
+  - type: AutoDeploy:SoftwareImageProfile
+    name: imageProfile
+    description: Name of PXE profile to use
+  - type: AutoDeploy:ADHostProfile
+    name: hostProfile
+    description: Host profile to use
+  - type: string
+    name: locationType
+    description: Type of vCenter Server Inventory object
+  - type: VC:HostFolder
+    name: hostFolder
+    description: vCenter Server host folder
+  - type: VC:Datacenter
+    name: datacenter
+    description: vCenter Server datacenter
+  - type: VC:ClusterComputeResource
+    name: clusterFolder
+    description: vCenter Server cluster
+  - type: string
+    name: pattern
+    description: 'pattern Description: The pattern should be in format "key1=value1","key2=value2",
+      etc. A key can have multiple values separated with commas "key=value1,value2".
+      If a value to contains a comma that value should be enclosed with single quotes:
+      "key=''some,value''. If a value contains a single quote escape it with another
+      single quote: "key=some''''value"'
+  outputParameters:
+  - type: AutoDeploy:DeployRule
+    name: deployRule
+    description: The created rule
+  endpointLink: /resources/endpoints/66898d5e-1b06-4567-b120-f50bba97e534
+formDefinition:
+  id: 8718fc2a-8881-4c33-9daf-ff7dd68cf429
+  name: content-resource-action-blackstone
+  form: '{"layout":{"pages":[{"id":"page_1","title":"Deploy rule details","sections":[{"id":"section_1","fields":[{"id":"adHost","display":"valuePicker","signpostPosition":"right-middle"}]},{"id":"section_2","fields":[{"id":"ruleName","display":"textField","signpostPosition":"right-middle"}]},{"id":"section_3","fields":[{"id":"imageProfile","display":"valuePicker","signpostPosition":"right-middle"}]},{"id":"section_4","fields":[{"id":"hostProfile","display":"valuePicker","signpostPosition":"right-middle"}]},{"id":"section_5","fields":[{"id":"pattern","display":"textField","signpostPosition":"right-middle"}]},{"id":"section_6","fields":[{"id":"locationType","display":"dropDown","signpostPosition":"right-middle"}]},{"id":"section_7","fields":[{"id":"datacenter","display":"valuePicker","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#locationType
+    == \"Datacenter\"`"},{"locationType":"locationType"},{"locationType__type_":"`string`"},{"return":"`boolean`"}]}},"signpostPosition":"right-middle"}]},{"id":"section_8","fields":[{"id":"hostFolder","display":"valuePicker","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#locationType
+    == \"Host Folder\"`"},{"locationType":"locationType"},{"locationType__type_":"`string`"},{"return":"`boolean`"}]}},"signpostPosition":"right-middle"}]},{"id":"section_9","fields":[{"id":"clusterFolder","display":"valuePicker","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#locationType==\"Cluster\"`"},{"locationType":"locationType"},{"locationType__type_":"`string`"},{"return":"`boolean`"}]},"read-only":false},"signpostPosition":"right-middle"}]}]}]},"schema":{"adHost":{"label":"Auto
+    Deploy host","type":{"dataType":"reference","referenceType":"AutoDeploy:AutoDeploy","isMultiple":false},"constraints":{"required":true}},"pattern":{"label":"Pattern","type":{"dataType":"string","isMultiple":false},"constraints":{"pattern":{"value":"^\\\"\\w+=\\S+\\\"$","message":"It
+    must match \\\"\\w+=\\S+\\\" pattern."}}},"ruleName":{"label":"Rule name","type":{"dataType":"string","isMultiple":false},"constraints":{"required":true}},"datacenter":{"label":"Datacenter","type":{"dataType":"reference","referenceType":"VC:Datacenter","isMultiple":false},"constraints":{}},"hostFolder":{"label":"Host
+    folder","type":{"dataType":"reference","referenceType":"VC:HostFolder","isMultiple":false},"constraints":{}},"hostProfile":{"label":"Host
+    profile","type":{"dataType":"reference","referenceType":"AutoDeploy:ADHostProfile","isMultiple":false},"constraints":{}},"imageProfile":{"label":"Image
+    profile","type":{"dataType":"reference","referenceType":"AutoDeploy:SoftwareImageProfile","isMultiple":false},"constraints":{"required":true}},"locationType":{"label":"Type","type":{"dataType":"string","isMultiple":false},"default":"Datacenter","valueList":["Datacenter","Host
+    Folder","Cluster"],"constraints":{}},"clusterFolder":{"label":"Cluster folder","type":{"dataType":"reference","referenceType":"VC:ClusterComputeResource","isMultiple":false},"constraints":{}}},"options":{"externalValidations":[]}}'
+  sourceType: resource.action
+  sourceId: Deployment.custom.content-resource-action-blackstone
+  type: requestForm
+  tenant: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+  status: 'ON'
+  formFormat: JSON
+organizationName: lcm-57-15

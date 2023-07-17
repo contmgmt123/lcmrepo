@@ -1,0 +1,36 @@
+id: d474f03e-e6b0-419a-8ad8-e55a6dd12fb1
+createdAt: '2023-06-20T14:58:48.742197Z'
+createdBy: configadmin
+updatedAt: '2023-06-20T15:02:48.777182Z'
+updatedBy: configadmin
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+projectId: d0b5772c-de2b-4ed8-9a56-c9908362328c
+projectName: Blackstone-XaaS-Project
+selfLink: /blueprint/api/blueprints/d474f03e-e6b0-419a-8ad8-e55a6dd12fb1
+name: 'Blackstone-test-cloud-template-01 '
+description: ''
+status: DRAFT
+content: |
+  ---
+  formatVersion: 1
+  inputs: {}
+  resources:
+    Cloud_vSphere_Machine_1:
+      type: "Cloud.vSphere.Machine"
+      metadata:
+        layoutPosition:
+        - 0
+        - 0
+      properties:
+        image: "test-image"
+        cpuCount: 1
+        totalMemoryMB: 1024
+valid: true
+validationMessages: [
+  ]
+totalVersions: 1
+totalReleasedVersions: 0
+requestScopeOrg: false
+contentSourceSyncMessages: [
+  ]
+latestVersion: '1'

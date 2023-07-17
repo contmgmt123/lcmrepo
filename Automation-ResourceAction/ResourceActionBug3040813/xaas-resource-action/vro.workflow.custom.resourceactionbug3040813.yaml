@@ -1,0 +1,176 @@
+id: vro.workflow.custom.resourceactionbug3040813
+name: ResourceActionBug3040813
+displayName: ResourceActionBug3040813
+providerName: vro-workflow
+resourceType: vro.workflow
+status: DRAFT
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+runnableItem:
+  id: 8F8080808080808080808080808080808080808001299080088268176866967b3
+  name: Add a REST host
+  description: Adds a REST host to the plug-in's inventory.
+  type: vro.workflow
+  inputParameters:
+  - type: string
+    name: name
+    description: Host's name
+  - type: string
+    name: url
+    description: Host's base URL
+  - type: string
+    name: authentication
+    description: Host's authentication type
+  - type: string
+    name: authUserName
+    description: Authentication user name
+  - type: SecureString
+    name: authPassword
+    description: Authentication password
+  - type: string
+    name: consumerKey
+    description: Consumer key
+  - type: SecureString
+    name: consumerSecret
+    description: Consumer secret
+  - type: string
+    name: accessToken
+    description: Access token
+  - type: SecureString
+    name: accessTokenSecret
+    description: Access token secret
+  - type: number
+    name: connectionTimeout
+    description: Connection timeout
+  - type: number
+    name: operationTimeout
+    description: Operation timeout
+  - type: string
+    name: sessionMode
+    description: Session mode
+  - type: string
+    name: oauth2Token
+    description: OAuth 2.0 token
+  - type: string
+    name: tokenSendingStrategy
+    description: OAuth 2.0 token sending strategy
+  - type: string
+    name: workstation
+    description: Workstation  for NTLM authentication
+  - type: string
+    name: domain
+    description: Domain  for NTLM authentication
+  - type: boolean
+    name: useProxy
+    description: Use Proxy
+  - type: string
+    name: proxyHost
+    description: Proxy host
+  - type: number
+    name: proxyPort
+    description: Proxy port
+  - type: boolean
+    name: ignoreWarnings
+    description: If set to true, the certificate is accepted silently and the certificate
+      is added to the trusted store
+  - type: boolean
+    name: hostVerification
+    description: Verify whether the target hostname matches the names stored inside
+      the server's X.509 certificate
+  - type: Configurator:Key
+    name: key
+    description: The PrivateKeyEntry to use for client certificate authentication.
+  - type: string
+    name: proxyAuthentication
+    description: Proxy AuthenticationType
+  - type: string
+    name: proxyAuthUserName
+    description: Proxy user name
+  - type: SecureString
+    name: proxyAuthPassword
+    description: Proxy password
+  - type: string
+    name: proxySessionMode
+    description: Proxy Session mode
+  - type: boolean
+    name: autoUrlRedirection
+    description: Automatically URL redirection
+  - type: string
+    name: redirectStrategy
+    description: Redirect strategy
+  - type: boolean
+    name: parallelRequestExecution
+  outputParameters:
+  - type: REST:RESTHost
+    name: restHost
+    description: The created RESTHost
+  endpointLink: /resources/endpoints/66898d5e-1b06-4567-b120-f50bba97e534
+formDefinition:
+  id: a2363bec-6868-4816-89d3-e857fd32d62a
+  name: ResourceActionBug3040813
+  form: '{"layout":{"pages":[{"id":"page_1","title":"Host Properties","sections":[{"id":"section_1","fields":[{"id":"name","display":"textField"}]},{"id":"section_2","fields":[{"id":"url","display":"textField"}]},{"id":"section_3","fields":[{"id":"connectionTimeout","display":"decimalField"}]},{"id":"section_4","fields":[{"id":"operationTimeout","display":"decimalField"}]},{"id":"section_5","fields":[{"id":"ignoreWarnings","display":"checkbox"}]},{"id":"section_6","fields":[{"id":"autoUrlRedirection","display":"checkbox","state":{"visible":false}}]},{"id":"section_7","fields":[{"id":"parallelRequestExecution","display":"checkbox"}]},{"id":"section_8","fields":[{"id":"redirectStrategy","display":"dropDown"}]}]},{"id":"page_2","title":"Host
+    Authentication","sections":[{"id":"section_9","fields":[{"id":"authentication","display":"dropDown"}]}]},{"id":"page_3","title":"User
+    credentials","sections":[{"id":"section_11","fields":[{"id":"sessionMode","display":"dropDown"}]},{"id":"section_12","fields":[{"id":"authUserName","display":"textField","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#sessionMode==\"Shared
+    Session\"`"},{"sessionMode":"sessionMode"},{"sessionMode__type_":"`string`"},{"return":"`boolean`"}]}}}]},{"id":"section_13","fields":[{"id":"authPassword","display":"passwordField","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#sessionMode==\"Shared
+    Session\"`"},{"sessionMode":"sessionMode"},{"sessionMode__type_":"`string`"},{"return":"`boolean`"}]}}}]}],"state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#authentication!=\"NONE\"&&#authentication!=\"OAuth
+    1.0\"&&#authentication!=\"OAuth 2.0\"`"},{"authentication":"authentication"},{"authentication__type_":"`string`"},{"return":"`boolean`"}]}}},{"id":"page_4","title":"OAuth
+    1.0","sections":[{"id":"section_15","fields":[{"id":"consumerKey","display":"textField"}]},{"id":"section_16","fields":[{"id":"consumerSecret","display":"passwordField"}]},{"id":"section_17","fields":[{"id":"accessToken","display":"textField"}]},{"id":"section_18","fields":[{"id":"accessTokenSecret","display":"passwordField"}]}],"state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#authentication==\"OAuth
+    1.0\"`"},{"authentication":"authentication"},{"authentication__type_":"`string`"},{"return":"`boolean`"}]}}},{"id":"page_5","title":"OAuth
+    2.0","sections":[{"id":"section_20","fields":[{"id":"oauth2Token","display":"textField"}]},{"id":"section_21","fields":[{"id":"tokenSendingStrategy","display":"dropDown"}]}],"state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#authentication==\"OAuth
+    2.0\"`"},{"authentication":"authentication"},{"authentication__type_":"`string`"},{"return":"`boolean`"}]}}},{"id":"page_6","title":"NTLM","sections":[{"id":"section_22","fields":[{"id":"workstation","display":"textField"}]},{"id":"section_23","fields":[{"id":"domain","display":"textField"}]}],"state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#authentication==\"NTLM\"`"},{"authentication":"authentication"},{"authentication__type_":"`string`"},{"return":"`boolean`"}]}}},{"id":"page_7","title":"Proxy
+    Settings","sections":[{"id":"section_24","fields":[{"id":"useProxy","display":"checkbox"}]},{"id":"section_25","fields":[{"id":"proxyHost","display":"textField","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}}]},{"id":"section_26","fields":[{"id":"proxyPort","display":"decimalField","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}}]},{"id":"section_27","fields":[{"id":"proxyAuthentication","display":"dropDown","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}}]}]},{"id":"page_8","title":"Proxy
+    Credentials","sections":[{"id":"section_28","fields":[{"id":"proxySessionMode","display":"dropDown","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy
+    && #proxyAuthentication != \"NONE\" && #proxyAuthentication != \"OAuth 1.0\" &&
+    #proxyAuthentication != \"OAuth 2.0\"`"},{"proxyAuthentication":"proxyAuthentication"},{"proxyAuthentication__type_":"`string`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}}]},{"id":"section_29","fields":[{"id":"proxyAuthUserName","display":"textField","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy
+    && (#proxySessionMode == \"Shared Session\")`"},{"proxySessionMode":"proxySessionMode"},{"proxySessionMode__type_":"`string`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}}]},{"id":"section_30","fields":[{"id":"proxyAuthPassword","display":"passwordField","state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy
+    && (#proxySessionMode == \"Shared Session\")`"},{"proxySessionMode":"proxySessionMode"},{"proxySessionMode__type_":"`string`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}}]}],"state":{"visible":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy
+    && #proxyAuthentication != \"NONE\" && #proxyAuthentication != \"OAuth 1.0\" &&
+    #proxyAuthentication != \"OAuth 2.0\"`"},{"proxyAuthentication":"proxyAuthentication"},{"proxyAuthentication__type_":"`string`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}},{"id":"page_9","title":"SSL","sections":[{"id":"section_31","fields":[{"id":"hostVerification","display":"checkbox"}]},{"id":"section_32","fields":[{"id":"key","display":"valuePickerTree"}]}]}]},"schema":{"key":{"label":"The
+    PrivateKeyEntry to use for client certificate authentication.","type":{"dataType":"reference","referenceType":"Configurator:Key","isMultiple":false},"constraints":{}},"url":{"label":"URL","type":{"dataType":"string","isMultiple":false},"constraints":{"required":true}},"name":{"label":"Name","type":{"dataType":"string","isMultiple":false},"constraints":{"required":true}},"domain":{"label":"Domain  for
+    NTLM authentication","type":{"dataType":"string","isMultiple":false},"default":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`GetAction(\"com.vmware.library.http-rest.configuration\",\"getRESTHostAuthenticationProperty\").call(
+    #host , 4.0, #authentication, (#authentication==\"NTLM\") )`"},{"host":"`vcoSerialized:`"},{"host__type_":"`string`"},{"authentication":"authentication"},{"authentication__type_":"`string`"},{"return":"`string`"}]},"constraints":{"required":true}},"useProxy":{"label":"Use
+    Proxy","type":{"dataType":"boolean","isMultiple":false},"default":false,"constraints":{}},"proxyHost":{"label":"Proxy
+    address","type":{"dataType":"string","isMultiple":false},"default":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`(#useProxy
+    && #host != null) ? #host.proxyHost : \"\"`"},{"host":"`vcoSerialized:`"},{"host__type_":"`string`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`string`"}]},"constraints":{"required":true}},"proxyPort":{"label":"Proxy
+    port","type":{"dataType":"decimal","isMultiple":false},"default":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`(#useProxy
+    && #host != null) ? #host.proxyPort : \"\"`"},{"host":"`vcoSerialized:`"},{"host__type_":"`string`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`number`"}]},"constraints":{"required":true}},"accessToken":{"label":"Access
+    token","type":{"dataType":"string","isMultiple":false},"constraints":{}},"consumerKey":{"label":"Consumer
+    key","type":{"dataType":"string","isMultiple":false},"constraints":{"required":true}},"oauth2Token":{"label":"Token","type":{"dataType":"string","isMultiple":false},"constraints":{"required":true}},"sessionMode":{"label":"Session
+    mode","type":{"dataType":"string","isMultiple":false},"default":"Shared Session","valueList":["Shared
+    Session","Per User Session"],"constraints":{}},"workstation":{"label":"Workstation  for
+    NTLM authentication","type":{"dataType":"string","isMultiple":false},"default":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`GetAction(\"com.vmware.library.http-rest.configuration\",\"getRESTHostAuthenticationProperty\").call(
+    #host , 3.0, #authentication, (#authentication==\"NTLM\") )`"},{"host":"`vcoSerialized:`"},{"host__type_":"`string`"},{"authentication":"authentication"},{"authentication__type_":"`string`"},{"return":"`string`"}]},"constraints":{}},"authPassword":{"label":"Authentication
+    password","type":{"dataType":"secureString","isMultiple":false},"constraints":{"required":true}},"authUserName":{"label":"Authentication
+    user name","type":{"dataType":"string","isMultiple":false},"constraints":{"required":true}},"authentication":{"label":"Host''s
+    authentication type","type":{"dataType":"string","isMultiple":false},"default":"NONE","valueList":["NONE","OAuth
+    1.0","OAuth 2.0","Basic","Digest","NTLM","Kerberos"],"constraints":{"required":true}},"consumerSecret":{"label":"Consumer
+    secret","type":{"dataType":"secureString","isMultiple":false},"constraints":{"required":true}},"ignoreWarnings":{"label":"If
+    set to true, the certificate is accepted silently and the certificate is added
+    to the trusted store.","type":{"dataType":"boolean","isMultiple":false},"default":false,"constraints":{}},"hostVerification":{"label":"Verify
+    whether the target hostname matches the names stored inside the server''s X.509
+    certificate","type":{"dataType":"boolean","isMultiple":false},"default":true,"constraints":{}},"operationTimeout":{"label":"Operation
+    timeout (seconds)","signpost":"The time waiting for data after establishing a
+    connection with the remote REST host. Maximum time of inactivity between two data
+    packets before terminating.","type":{"dataType":"decimal","isMultiple":false},"default":60.0,"constraints":{"min-value":0.0}},"proxySessionMode":{"label":"Proxy
+    Session mode","type":{"dataType":"string","isMultiple":false},"default":"Shared
+    Session","valueList":["Shared Session","Per User Session"],"constraints":{}},"redirectStrategy":{"label":"Redirect
+    strategy","type":{"dataType":"string","isMultiple":false},"default":"defaultRedirect","valueList":["defaultRedirect","alwaysRedirect","neverRedirect"],"constraints":{}},"accessTokenSecret":{"label":"Access
+    token secret","type":{"dataType":"secureString","isMultiple":false},"constraints":{}},"connectionTimeout":{"label":"Connection
+    timeout (seconds)","signpost":"The maximum time to establish a connection with
+    the remote REST host.","type":{"dataType":"decimal","isMultiple":false},"default":30.0,"constraints":{"min-value":0.0}},"proxyAuthPassword":{"label":"Proxy
+    password","type":{"dataType":"secureString","isMultiple":false},"constraints":{"required":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy
+    && (#proxySessionMode == \"Shared Session\")`"},{"proxySessionMode":"proxySessionMode"},{"proxySessionMode__type_":"`string`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}},"proxyAuthUserName":{"label":"Proxy
+    user name","type":{"dataType":"string","isMultiple":false},"constraints":{"required":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy
+    && (#proxySessionMode == \"Shared Session\")`"},{"proxySessionMode":"proxySessionMode"},{"proxySessionMode__type_":"`string`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}},"autoUrlRedirection":{"label":"Automatically
+    URL Redirection","type":{"dataType":"boolean","isMultiple":false},"default":false,"constraints":{}},"proxyAuthentication":{"label":"Proxy
+    AuthenticationType","type":{"dataType":"string","isMultiple":false},"valueList":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`(#url.toString().startsWith(\"https\"))
+    ? new String[]{\"NONE\"} : new String[]{\"NONE\", \"Basic\"}`"},{"url":"url"},{"url__type_":"`string`"},{"return":"`Array/string`"}]},"constraints":{"required":{"id":"com.vmware.o11n.forms/evalOGNL","type":"scriptAction","parameters":[{"ognl":"`#useProxy`"},{"useProxy":"useProxy"},{"useProxy__type_":"`boolean`"},{"return":"`boolean`"}]}}},"tokenSendingStrategy":{"label":"Token
+    sending strategy","type":{"dataType":"string","isMultiple":false},"default":"Authorization
+    header","valueList":["Authorization header","Query parameter"],"constraints":{}},"parallelRequestExecution":{"label":"Support
+    for parallel request executions","type":{"dataType":"boolean","isMultiple":false},"default":false,"constraints":{}}}}'
+  sourceType: resource.action
+  sourceId: vro.workflow.custom.resourceactionbug3040813
+  type: requestForm
+  tenant: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+  status: 'ON'
+  formFormat: JSON
+organizationName: lcm-57-15

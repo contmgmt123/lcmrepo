@@ -1,0 +1,35 @@
+id: 5629ed5c-adfc-43cc-a0e6-a0c526bff14b
+createdAt: '2023-07-11T11:16:32.674952Z'
+createdBy: configadmin
+updatedAt: '2023-07-11T11:16:32.674952Z'
+updatedBy: configadmin
+orgId: a9079aaa-afc9-4daf-94dd-0e3f4d6f2a83
+projectId: 5d079457-1bc3-4841-91d2-9714e869433c
+projectName: p1
+selfLink: /blueprint/api/blueprints/5629ed5c-adfc-43cc-a0e6-a0c526bff14b
+name: CT
+description: ''
+status: DRAFT
+content: |
+  ---
+  formatVersion: 1
+  inputs: {}
+  resources:
+    Cloud_vSphere_Machine_1:
+      type: "Cloud.vSphere.Machine"
+      metadata:
+        layoutPosition:
+        - 0
+        - 0
+      properties:
+        image: "img1"
+        cpuCount: 1
+        totalMemoryMB: 1024
+valid: true
+validationMessages: [
+  ]
+totalVersions: 0
+totalReleasedVersions: 0
+requestScopeOrg: false
+contentSourceSyncMessages: [
+  ]
