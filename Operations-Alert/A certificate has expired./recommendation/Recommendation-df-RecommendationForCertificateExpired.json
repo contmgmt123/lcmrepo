@@ -1,0 +1,4 @@
+{
+  "id": "Recommendation-df-RecommendationForCertificateExpired",
+  "description": "Ensure services that are currently using the certificate are updated to use a new, non-expired certificate. Once the expired certificate is no longer in use, it should be deleted by invoking the DELETE /api/v1/trust-management/certificates/&lt;certificate-id&gt; or /policy/api/v1/trust-management/certificates/&lt;certificate-id&gt; NSX API. If the expired certificate is used by NAPP Platform, the connection is broken between NSX and NAPP Platform. Check the NAPP Platform troubleshooting document to use a self-signed NAPP CA certificate for recovering the connection."
+}
