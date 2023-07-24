@@ -1,0 +1,12 @@
+{
+  "contentName": "A certificate has expired.",
+  "id": "AlertDefinition-CertificateExpired",
+  "contentType": "Operations-Alert",
+  "descendents": [  {
+    "contentName": "A certificate has expired.",
+    "id": "SymptomDefinition-CertificateExpired",
+    "contentType": "Operations-Symptom",
+    "keyValues": {},
+    "descendents": []
+  }]
+}

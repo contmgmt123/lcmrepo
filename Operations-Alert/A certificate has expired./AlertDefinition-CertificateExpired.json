@@ -1,0 +1,25 @@
+{
+  "id": "AlertDefinition-CertificateExpired",
+  "name": "A certificate has expired.",
+  "description": "A certificate has expired.",
+  "adapterKindKey": "NSXTAdapter",
+  "resourceKindKey": "NSXTAdapterInstance",
+  "waitCycles": 1,
+  "cancelCycles": 1,
+  "type": 15,
+  "subType": 19,
+  "states": [  {
+    "severity": "CRITICAL",
+    "base-symptom-set":     {
+      "type": "SYMPTOM_SET",
+      "relation": "SELF",
+      "symptomDefinitionIds": ["SymptomDefinition-CertificateExpired"],
+      "alertConditions": []
+    },
+    "impact":     {
+      "impactType": "BADGE",
+      "detail": "health"
+    },
+    "recommendationPriorityMap": {"Recommendation-df-RecommendationForCertificateExpired": 1}
+  }]
+}
