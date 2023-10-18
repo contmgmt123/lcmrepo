@@ -1,0 +1,12 @@
+{
+  "contentName": "blackstone-test-report",
+  "id": "812b0d17-490f-413a-af8e-24ec235717f6",
+  "contentType": "Operations-Report",
+  "descendents": [  {
+    "contentName": "Blackstone Basic Dashboard",
+    "id": "0d00dcab-da6c-4924-9bda-49d5ab8f67cb",
+    "contentType": "Operations-Dashboard",
+    "keyValues": {},
+    "descendents": []
+  }]
+}
