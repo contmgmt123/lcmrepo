@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><Content>
+        
+    <Reports>
+                
+        <ReportDef id="812b0d17-490f-413a-af8e-24ec235717f6">
+                        
+            <Title>blackstone-test-report</Title>
+                        
+            <Description/>
+                        
+            <Sections>
+                                
+                <Section>
+                                        
+                    <ContentType>CoverPage</ContentType>
+                                        
+                    <ContentKey>COVER_PAGE</ContentKey>
+                                    
+                </Section>
+                                
+                <Section>
+                                        
+                    <ContentType>TableOfContents</ContentType>
+                                        
+                    <ContentKey>TABLE_OF_CONTENTS</ContentKey>
+                                    
+                </Section>
+                                
+                <Section>
+                                        
+                    <ContentType>Dashboard</ContentType>
+                                        
+                    <ContentKey>0d00dcab-da6c-4924-9bda-49d5ab8f67cb</ContentKey>
+                                        
+                    <ContentOrientation>Landscape</ContentOrientation>
+                                    
+                </Section>
+                            
+            </Sections>
+                        
+            <Settings>
+                                
+                <ShowPageFooter>true</ShowPageFooter>
+                                
+                <OutputFormat>csv</OutputFormat>
+                                
+                <OutputFormat>pdf</OutputFormat>
+                            
+            </Settings>
+                    
+        </ReportDef>
+            
+    </Reports>
+    
+</Content>

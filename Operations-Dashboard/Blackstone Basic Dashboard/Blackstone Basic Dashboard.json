@@ -1,0 +1,395 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1671012645324,
+      "dashboardNavigations": {"f4f98a73-81d3-4c31-aad0-5e749a351c01": [
+         {
+            "id": "3d84205c-45c8-4708-9a94-161a18443796",
+            "widgets": []
+         },
+         {
+            "id": "c6182909-88ab-4e67-9049-97ee2959c49b",
+            "widgets": []
+         },
+         {
+            "id": "7ea9186b-d9e0-4dfe-a05d-b27433432306",
+            "widgets": []
+         },
+         {
+            "id": "3f6b549f-1b52-4561-8633-f5e2f70c44f0",
+            "widgets": []
+         },
+         {
+            "id": "1fe0e318-0a32-4396-9241-80d8c76bfb90",
+            "widgets": []
+         },
+         {
+            "id": "521d4e88-cec8-4d68-9003-aa05f16e8bad",
+            "widgets": []
+         },
+         {
+            "id": "ccfeaa5d-0509-4f69-9ad3-7a78599d917e",
+            "widgets": []
+         },
+         {
+            "id": "e1a3406f-7760-4646-9e4f-e5b6ba80687b",
+            "widgets": []
+         },
+         {
+            "id": "5766d78e-29c9-4e11-9d99-68adf0b067f1",
+            "widgets": []
+         },
+         {
+            "id": "be4cdd27-04c1-4a26-972b-29fdb9ed92ae",
+            "widgets": []
+         },
+         {
+            "id": "f56d06fb-1dc3-4fed-b200-4222fc4e3aef",
+            "widgets": []
+         },
+         {
+            "id": "cffd6ccb-a0d0-4253-9ed8-9926ea3ce5d5",
+            "widgets": []
+         },
+         {
+            "id": "c5f07b10-38b3-4da4-b159-afcd60ab930f",
+            "widgets": []
+         },
+         {
+            "id": "5a2fc608-e649-4ef7-b310-1e7f9fec4a5d",
+            "widgets": []
+         },
+         {
+            "id": "9b96167e-0f13-4974-bfe6-1774e57319d4",
+            "widgets": []
+         },
+         {
+            "id": "19324971-30b0-443d-b50a-df11a37b65ee",
+            "widgets": []
+         },
+         {
+            "id": "2c42fa31-5e81-4ca5-a7df-91cb95a89554",
+            "widgets": []
+         },
+         {
+            "id": "f07bb6b1-807f-4b0a-b9ef-cd50634e0931",
+            "widgets": []
+         },
+         {
+            "id": "8755ab27-06ad-450b-847f-dd773ebf9aeb",
+            "widgets": []
+         },
+         {
+            "id": "8934f615-1c5b-4ec0-8ce5-26acb9dfc4c5",
+            "widgets": []
+         },
+         {
+            "id": "169c43d9-9ecf-41fd-acd4-95e1703f1d10",
+            "widgets": []
+         },
+         {
+            "id": "103d80ba-7588-46e3-83d9-2e02f65a9c85",
+            "widgets": []
+         },
+         {
+            "id": "4b5c602a-6105-48d4-9318-d37c27ba1209",
+            "widgets": []
+         },
+         {
+            "id": "6a56ac8e-7d2d-481e-9407-5af3c4248bde",
+            "widgets": []
+         },
+         {
+            "id": "83805407-ef18-42ac-b085-2ccad39c1614",
+            "widgets": []
+         },
+         {
+            "id": "23e727b8-9417-4165-9f8e-98f8c3427532",
+            "widgets": []
+         },
+         {
+            "id": "d5daefd6-e638-477c-8683-3ec9c5c73f0f",
+            "widgets": []
+         },
+         {
+            "id": "dadc93c2-9a3f-4cb2-aa5c-d2665fe956d0",
+            "widgets": []
+         },
+         {
+            "id": "fc548d8e-058f-471d-9f97-f97fef6fff8a",
+            "widgets": []
+         },
+         {
+            "id": "ca113854-e32f-4ef8-9e2b-799e24270ab7",
+            "widgets": []
+         },
+         {
+            "id": "10af4011-a886-4eb5-b114-865761afa7de",
+            "widgets": []
+         },
+         {
+            "id": "587126fe-303c-49c2-ac7e-9b3fccf693dc",
+            "widgets": []
+         },
+         {
+            "id": "044e677a-edee-41d1-8218-6d85b10d33b9",
+            "widgets": []
+         },
+         {
+            "id": "3d6016ef-86b6-498f-a4b8-dc5d5fafe704",
+            "widgets": []
+         },
+         {
+            "id": "30a2564a-9eaf-4833-9d41-4fd45c57aefb",
+            "widgets": []
+         },
+         {
+            "id": "3c0a0139-71a4-4077-8d35-cf23efbaff82",
+            "widgets": []
+         },
+         {
+            "id": "a33d7410-336d-40a7-b24a-23626b3bed8b",
+            "widgets": []
+         },
+         {
+            "id": "62a1da45-a5da-4705-837e-cd51bdc58e50",
+            "widgets": []
+         },
+         {
+            "id": "6b81d3fc-9784-4d28-b609-5e508288df61",
+            "widgets": []
+         },
+         {
+            "id": "cd68f70c-48a7-49f7-aebf-6d638b3953bd",
+            "widgets": []
+         },
+         {
+            "id": "18ad3140-2b24-4be2-a937-a205461b1ab3",
+            "widgets": []
+         },
+         {
+            "id": "bee80774-db96-41f3-8c77-cbf1771cabd3",
+            "widgets": []
+         },
+         {
+            "id": "9e738d8c-6483-4cb2-ad69-9bec94ebc9b0",
+            "widgets": []
+         },
+         {
+            "id": "a23edd61-4ba6-4bfa-8a4a-43f4726415e2",
+            "widgets": []
+         },
+         {
+            "id": "2f475e1b-94eb-43e4-9b33-36d7c445a48a",
+            "widgets": []
+         },
+         {
+            "id": "4f465b19-b0c5-4d38-b417-38ae6191f047",
+            "widgets": []
+         },
+         {
+            "id": "67ae00e5-b400-40de-830c-15f0072470ce",
+            "widgets": []
+         },
+         {
+            "id": "d01d7ba0-d0ef-49c9-8ee7-b78b93cbf592",
+            "widgets": []
+         },
+         {
+            "id": "eeab8718-6aca-4cb9-b7b9-c4a51419a1f9",
+            "widgets": []
+         },
+         {
+            "id": "28df0923-dab2-4c44-87ef-57b7662dcf09",
+            "widgets": []
+         },
+         {
+            "id": "259e0301-836d-404b-8fdc-1cc52070b174",
+            "widgets": []
+         },
+         {
+            "id": "e1ebd69e-f0bc-413f-98a5-7f5118537818",
+            "widgets": []
+         },
+         {
+            "id": "b4862971-0aed-456f-8c41-aa5c0ca11604",
+            "widgets": []
+         },
+         {
+            "id": "a165a8b4-8205-4fc2-84b1-7d34d431f6b8",
+            "widgets": []
+         },
+         {
+            "id": "103d30a3-2afa-4016-91d9-b77bb6d87d2a",
+            "widgets": []
+         },
+         {
+            "id": "f1df804b-aaca-4b83-ab4a-d5863a5d7ced",
+            "widgets": []
+         },
+         {
+            "id": "d56bea04-dab1-4ed8-90a8-d09518887d53",
+            "widgets": []
+         },
+         {
+            "id": "ad52daa1-6f4d-4f8a-8f36-e0fcdc1b3f27",
+            "widgets": []
+         },
+         {
+            "id": "fa82bba1-e9f6-4a98-83e9-178207291a81",
+            "widgets": []
+         },
+         {
+            "id": "b14c401b-93a7-4fb9-8129-1ea1a60e4bba",
+            "widgets": []
+         },
+         {
+            "id": "2e996127-1179-4021-ac6c-e9f208c05d05",
+            "widgets": []
+         },
+         {
+            "id": "36758caa-8969-4bca-9e47-0c2206f48926",
+            "widgets": []
+         },
+         {
+            "id": "1eb7c421-18ab-41f7-b090-317b54d256c7",
+            "widgets": []
+         },
+         {
+            "id": "b697ffa2-674d-4ab3-97be-196d09edcc66",
+            "widgets": []
+         },
+         {
+            "id": "68fef1a7-b98a-4628-bc2f-90e7eb2cfe76",
+            "widgets": []
+         },
+         {
+            "id": "ecdeda76-417f-4ec5-a49e-a9bd0c621546",
+            "widgets": []
+         },
+         {
+            "id": "2f475e1b-94eb-4ab4-9b33-36d7c445a48a",
+            "widgets": []
+         },
+         {
+            "id": "2f475e1b-94eb-12c1-9b33-36d7c445a48a",
+            "widgets": []
+         },
+         {
+            "id": "48aef680-6269-473a-95ea-c46cdc14cdd9",
+            "widgets": []
+         },
+         {
+            "id": "a7575481-1da1-4ade-b07e-f5d5b5b66e8c",
+            "widgets": []
+         },
+         {
+            "id": "b29ed707-3c2c-44e3-8ed6-57b74dd5aedb",
+            "widgets": []
+         },
+         {
+            "id": "9ddaaf3b-86d2-4120-983c-3a1342f5f30a",
+            "widgets": []
+         },
+         {
+            "id": "86f00fd4-4621-4962-9b15-6f404cc97dbc",
+            "widgets": []
+         },
+         {
+            "id": "0d2f39d8-8279-4840-9903-58b6a83b88be",
+            "widgets": []
+         },
+         {
+            "id": "dc12c72f-3fd1-4aeb-9edd-ba134824f0b6",
+            "widgets": []
+         },
+         {
+            "id": "d8fd632f-9e35-4434-8a55-8f03ea4748d5",
+            "widgets": [{
+               "id": "a4b5437a-c928-4823-bd13-30e9f50dcf1c",
+               "interactionType": "resourceId"
+            }]
+         },
+         {
+            "id": "984a2071-ea01-428b-9af4-e74fc115a7af",
+            "widgets": []
+         },
+         {
+            "id": "ccbb3c5a-b388-4b20-b49e-326906dad4f5",
+            "widgets": []
+         },
+         {
+            "id": "33836263-7e2d-4768-869f-e6833b238156",
+            "widgets": []
+         },
+         {
+            "id": "30d88d98-557e-4098-8ac6-ae756b2b06e4",
+            "widgets": []
+         },
+         {
+            "id": "82f16402-6701-4cca-9341-cc0e974af673",
+            "widgets": []
+         },
+         {
+            "id": "46dd4f33-ce50-4f9d-b568-f3505f456a5f",
+            "widgets": []
+         },
+         {
+            "id": "66e5d69b-321d-4e4e-856c-60b36f2c92e7",
+            "widgets": []
+         }
+      ]},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "0d00dcab-da6c-4924-9bda-49d5ab8f67cb",
+      "importAttempts": 0,
+      "importComplete": true,
+      "lastUpdateTime": 1697561389728,
+      "lastUpdateUserId": "54619a6e-c345-492f-bea1-b3d4d033d633",
+      "locked": false,
+      "name": "Blackstone Basic Dashboard",
+      "rank": 0,
+      "shared": false,
+      "states": [],
+      "temporary": false,
+      "userId": "54619a6e-c345-492f-bea1-b3d4d033d633",
+      "widgetInteractions": [],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {},
+            "gridsterCoords": {
+               "h": 6,
+               "w": 8,
+               "x": 1,
+               "y": 1
+            },
+            "height": 324,
+            "id": "f4f98a73-81d3-4c31-aad0-5e749a351c01",
+            "title": "View",
+            "type": "View"
+         },
+         {
+            "collapsed": false,
+            "config": {},
+            "gridsterCoords": {
+               "h": 6,
+               "w": 4,
+               "x": 1,
+               "y": 7
+            },
+            "height": 324,
+            "id": "62c591af-8cab-4983-9b85-3c839b5847b0",
+            "title": "Scoreboard",
+            "type": "Scoreboard"
+         }
+      ]
+   }],
+   "entries": {},
+   "uuid": "6c5c1e40-86af-4722-b646-dd06e20002bd"
+}
